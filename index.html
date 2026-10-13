@@ -3,68 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apex Dojo | Martial Arts Gym</title>
+  <meta name="description" content="Apex Dojo is a martial arts gym in Tung Chung, Hong Kong. Kids, teens, and adult classes in Brazilian jiu-jitsu, Muay Thai, and self-defense. Your first class is free.">
+  <title>Apex Dojo | Martial Arts Gym, Tung Chung</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <header>
-    <nav>
-      <div class="logo">Apex Dojo</div>
+    <nav aria-label="Primary">
+      <a class="logo" href="index.html">Apex Dojo</a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="nav-summary" for="nav-toggle"><span class="menu-open">Menu</span><span class="menu-close">Close</span></label>
+      <a class="btn nav-cta" href="contact.html#trial">Free Trial</a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="programs.html">Programs</a></li>
         <li><a href="schedule.html">Schedule</a></li>
         <li><a href="instructors.html">Instructors</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <a href="contact.html" class="btn">Free Trial</a>
     </nav>
   </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Tung Chung, Hong Kong</p>
+        <h1>Discipline. Strength. Community.</h1>
+        <p class="hero-text">Build confidence and skill through martial arts. Kids and adults are welcome. Beginners start here.</p>
+        <a class="btn btn-light" href="contact.html#trial">Claim Your Free Trial</a>
+      </div>
+    </section>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Discipline. Strength. Community.</h1>
-      <p>Build confidence and skill through martial arts. Kids & Adults welcome. Beginners start here.</p>
-      <a href="contact.html" class="btn">Claim Your Free Trial</a>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2>Our Programs</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Kids Martial Arts</h3>
-          <p>Fun, safe classes building discipline, confidence, and coordination for ages 5-12.</p>
-          <a href="programs.html" class="btn btn-outline">Learn More</a>
+    <section id="who-we-train">
+      <div class="container">
+        <div class="section-head">
+          <h2>Who We Train</h2>
+          <p class="lede">Most people on the mat started with no experience. Classes are split so a first day has a clear place to stand.</p>
         </div>
-        <div class="card">
-          <h3>Adult BJJ & Striking</h3>
-          <p>Brazilian Jiu-Jitsu, Muay Thai, and self-defense for fitness, skill, and community.</p>
-          <a href="programs.html" class="btn btn-outline">Learn More</a>
-        </div>
-        <div class="card">
-          <h3>Beginner Friendly</h3>
-          <p>No experience needed. We guide you from day one with structured training.</p>
-          <a href="contact.html" class="btn btn-outline">Start Free</a>
+        <div class="who-grid">
+          <article class="who">
+            <span class="who-num">01</span>
+            <h3>Kids, 5–12</h3>
+            <p>After-school classes for focus, coordination, and respect. Children learn how to try, miss, and come back calm.</p>
+          </article>
+          <article class="who">
+            <span class="who-num">02</span>
+            <h3>Teens, 13–17</h3>
+            <p>A structured room for teenagers who want to train hard. Jiu-jitsu, fitness, and coaching that treats them as athletes.</p>
+          </article>
+          <article class="who">
+            <span class="who-num">03</span>
+            <h3>Adults, from zero</h3>
+            <p>People who live or work in Tung Chung and want training without a trip to Central. Fundamentals classes assume you have never tied a belt.</p>
+          </article>
+          <article class="who">
+            <span class="who-num">04</span>
+            <h3>Practical self-defense</h3>
+            <p>Short classes in normal workout clothes. Distance, balance, and a few escapes you can remember under stress.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section style="background:#f8f8f8;">
-    <div class="container" style="text-align:center;">
-      <h2>Why Train With Us?</h2>
-      <p>Experienced instructors. Supportive community. Real results. Located in Tung Chung, HK.</p>
-      <a href="instructors.html" class="btn">Meet the Team</a>
-    </div>
-  </section>
+    <section class="band">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Programs</h2>
+          <p class="lede">Five classes. One standard: show up, listen, and leave a little sharper than you arrived.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Kids Martial Arts</h3>
+            <p>Fun, safe classes building discipline, confidence, and coordination for ages 5–12.</p>
+            <a class="btn btn-outline" href="programs.html#kids">Learn More</a>
+          </article>
+          <article class="card">
+            <h3>Adult BJJ &amp; Striking</h3>
+            <p>Brazilian jiu-jitsu, Muay Thai, and self-defense for fitness, skill, and community.</p>
+            <a class="btn btn-outline" href="programs.html#bjj">Learn More</a>
+          </article>
+          <article class="card">
+            <h3>Beginner Friendly</h3>
+            <p>No experience needed. We guide you from day one with structured training.</p>
+            <a class="btn btn-outline" href="contact.html#trial">Start Free</a>
+          </article>
+        </div>
+        <p class="center-link"><a class="text-link" href="programs.html">See every program</a></p>
+      </div>
+    </section>
 
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Why Train With Us?</h2>
+          <p class="lede">Experienced instructors. A supportive community. Real results. The gym is in Tung Chung.</p>
+        </div>
+        <div class="reasons">
+          <article class="reason">
+            <h3>Experienced instructors</h3>
+            <p>Coaches stay on the floor. You get a correction, not a playlist of drills while someone watches from a chair.</p>
+          </article>
+          <article class="reason">
+            <h3>Supportive community</h3>
+            <p>A room that learns your name. On day one you have a partner and a place in the line.</p>
+          </article>
+          <article class="reason">
+            <h3>Real results, close to home</h3>
+            <p>A short walk from Tung Chung Station. Skill you can use, without crossing the harbour for a 7pm class.</p>
+          </article>
+        </div>
+        <p class="center-link"><a class="btn" href="instructors.html">Meet the Team</a></p>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band-inner">
+        <div>
+          <h2>Your first class is free.</h2>
+          <p>Tell us who is training and we will place you in a class this week.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-light" href="contact.html#trial">Claim Your Free Trial</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
   <footer>
     <div class="container">
-      <p>&copy; 2026 Apex Dojo. All rights reserved. | Tung Chung, Hong Kong</p>
-      <p><a href="tel:+85212345678">Call Us</a> | <a href="contact.html">Contact</a></p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="logo" href="index.html">Apex Dojo</a>
+          <p>Martial arts for kids, teens, and adults in Tung Chung, Hong Kong.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="footer-contact">
+          <a class="btn btn-light" href="contact.html#trial">Free Trial</a>
+          <p><a href="tel:+85212345678">+852 1234 5678</a></p>
+          <p><a href="https://wa.me/85212345678">WhatsApp</a></p>
+          <p><a href="mailto:hello@apexdojo.hk">hello@apexdojo.hk</a></p>
+        </div>
+      </div>
+      <p class="footer-legal">&copy; 2026 Apex Dojo. All rights reserved. | Tung Chung, Hong Kong</p>
     </div>
   </footer>
 </body>
