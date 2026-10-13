@@ -534,12 +534,13 @@ section {
 
 .schedule {
   width: 100%;
-  min-width: 40rem;
+  min-width: 58rem;
   border-collapse: collapse;
   background: var(--paper);
 }
 
-.schedule caption {
+.schedule caption,
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -549,12 +550,13 @@ section {
 
 .schedule th,
 .schedule td {
-  padding: 0.8rem 0.85rem;
-  text-align: left;
-  vertical-align: top;
+  border: 1px solid var(--ink);
+  padding: 0.9rem 0.7rem;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.schedule th {
+.schedule thead th {
   background: var(--ink);
   color: var(--paper);
   font-family: 'Oswald', sans-serif;
@@ -564,33 +566,63 @@ section {
   text-transform: uppercase;
 }
 
-.schedule td {
-  border-bottom: 1px solid var(--line);
+.schedule tbody th {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 0.92rem;
+  letter-spacing: 0.03em;
+  text-align: left;
+  white-space: nowrap;
 }
 
 .schedule tbody tr:nth-child(even) td {
   background: var(--wash);
 }
 
-.schedule th:first-child,
-.schedule td:first-child {
+.schedule thead th:first-child,
+.schedule tbody th {
   position: sticky;
   left: 0;
   z-index: 1;
   box-shadow: 1px 0 0 var(--ink);
 }
 
-.schedule th:first-child {
-  background: var(--ink);
+.schedule td {
+  min-width: 6.75rem;
 }
 
-.schedule td:first-child {
-  background: var(--paper);
+.class-name {
+  display: block;
+  font-family: 'Oswald', sans-serif;
   font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
-.schedule tbody tr:nth-child(even) td:first-child {
-  background: var(--wash);
+.class-time {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.schedule-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.5rem;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.schedule-key strong {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 0.35rem;
 }
 
 .fine {
