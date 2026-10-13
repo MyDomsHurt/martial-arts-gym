@@ -551,7 +551,7 @@ section {
 .schedule th,
 .schedule td {
   border: 1px solid var(--ink);
-  padding: 0.9rem 0.7rem;
+  padding: 0.55rem 0.65rem;
   text-align: center;
   vertical-align: middle;
 }
@@ -577,8 +577,30 @@ section {
   white-space: nowrap;
 }
 
-.schedule tbody tr:nth-child(even) td {
+.schedule tbody tr:nth-child(even) td.is-empty {
   background: var(--wash);
+}
+
+.schedule td.is-openmat,
+.swatch.is-openmat {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.schedule td.is-openmat {
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.schedule td.is-boxing,
+.swatch.is-boxing {
+  background: #5e5e5e;
+  color: var(--paper);
+}
+
+.schedule td.is-fitness,
+.swatch.is-fitness {
+  background: #e4e4e4;
+  color: var(--ink);
 }
 
 .schedule thead th:first-child,
@@ -615,6 +637,15 @@ section {
   gap: 0.45rem 1.5rem;
   list-style: none;
   margin-top: 1rem;
+}
+
+.schedule-key .swatch {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 0.45rem;
+  border: 1px solid var(--ink);
+  vertical-align: -0.15rem;
 }
 
 .schedule-key strong {
