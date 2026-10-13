@@ -1,6 +1,6 @@
 # Open Dojo
 
-Static website for Open Dojo, a martial arts gym in Tung Chung, Hong Kong. Classes are boxing, martial arts fitness, and jiu jitsu open mat.
+Static website for Open Dojo, a martial arts gym in Yau Tong, Hong Kong. Classes are boxing, martial arts fitness, and jiu jitsu open mat.
 
 Black-and-white HTML and CSS. Oswald for headings and buttons, Inter for body text. No framework and no build step.
 
