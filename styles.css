@@ -1,4 +1,4 @@
-/* Apex Dojo - Black & White Martial Arts Gym */
+/* Open Dojo - Black & White Martial Arts Gym */
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
 
@@ -938,7 +938,7 @@ footer a {
   }
 
   .who-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer-inner {

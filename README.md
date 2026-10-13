@@ -1,13 +1,13 @@
-# Apex Dojo
+# Open Dojo
 
-Static website for Apex Dojo, a martial arts gym in Tung Chung, Hong Kong.
+Static website for Open Dojo, a martial arts gym in Tung Chung, Hong Kong. Classes are boxing, martial arts fitness, and jiu jitsu open mat.
 
 Black-and-white HTML and CSS. Oswald for headings and buttons, Inter for body text. No framework and no build step.
 
 ## Pages
 
 - `index.html` — Home, with a free-trial hero and Who We Train
-- `programs.html` — Kids, Teens, Adult BJJ, Muay Thai, Self-Defense
+- `programs.html` — Boxing, Martial Arts Fitness, Jiu Jitsu Open Mat
 - `schedule.html` — Weekly timetable
 - `instructors.html` — Coaching team
 - `pricing.html` — Membership options in HKD
