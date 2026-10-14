@@ -705,12 +705,10 @@ section {
   padding-top: 0.8rem;
 }
 
-.rate-block {
-  margin-top: 2.75rem;
-}
-
-.rate-block:first-child {
-  margin-top: 0;
+.rate-block + .rate-block {
+  margin-top: 4.25rem;
+  padding-top: 3.25rem;
+  border-top: 1px solid var(--line);
 }
 
 .rate-block h2 {
