@@ -327,6 +327,16 @@ nav {
   margin-bottom: 0.85rem;
 }
 
+.page-hero h1.hero-split {
+  font-size: min(3.25rem, calc((100vw - 3.5rem) / 19));
+  line-height: 1.16;
+}
+
+.page-hero h1.hero-split span {
+  display: block;
+  white-space: nowrap;
+}
+
 .page-hero .lede {
   margin: 0 auto 1.5rem;
   font-size: 1.125rem;
