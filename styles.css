@@ -304,6 +304,16 @@ nav {
   margin-bottom: 1rem;
 }
 
+.hero h1.hero-split {
+  font-size: min(4.25rem, calc((100vw - 3.5rem) / 15.2));
+  line-height: 1.12;
+}
+
+.hero h1.hero-split span {
+  display: block;
+  white-space: nowrap;
+}
+
 .hero .eyebrow {
   font-size: 0.78rem;
   margin-bottom: 0.85rem;
@@ -469,6 +479,75 @@ section {
 .center-link {
   text-align: center;
   margin-top: 1.75rem;
+}
+
+.insight {
+  margin-top: 2.75rem;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  text-align: center;
+  padding: 1.35rem 1.15rem 1.25rem;
+}
+
+.insight-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1rem;
+}
+
+.insight-pair p {
+  margin: 0;
+  padding: 0 0.5rem;
+}
+
+.insight-pair p + p {
+  margin-top: 0;
+  border-left: 1px solid var(--ink);
+}
+
+.insight-pair span {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.insight-pair strong {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.insight-line {
+  margin: 0 auto;
+  max-width: 36rem;
+}
+
+.pricing-bridge {
+  text-align: center;
+  margin: 2.75rem 0 0;
+}
+
+.pricing-bridge a {
+  color: inherit;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
+.pricing-bridge a:hover {
+  text-decoration: none;
 }
 
 /* Who we train and reasons */
