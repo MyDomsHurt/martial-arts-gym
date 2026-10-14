@@ -705,6 +705,128 @@ section {
   padding-top: 0.8rem;
 }
 
+.rate-block {
+  margin-top: 2.75rem;
+}
+
+.rate-block:first-child {
+  margin-top: 0;
+}
+
+.rate-block h2 {
+  margin-bottom: 0.4rem;
+}
+
+.rate-note {
+  max-width: 40rem;
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.rate-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--paper);
+}
+
+.rate-table th,
+.rate-table td {
+  border: 1px solid var(--ink);
+  padding: 0.85rem 0.6rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.rate-table th {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rate-table td {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1;
+}
+
+.rate-unit {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.rate-seq {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+}
+
+.rate-seq li {
+  padding: 0.85rem 0.3rem;
+  text-align: center;
+  border-left: 1px solid var(--ink);
+}
+
+.rate-seq li:first-child {
+  border-left: none;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.rate-seq span {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rate-seq strong {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.35rem, 3vw, 2.1rem);
+  line-height: 1;
+}
+
+.rate-seq .rate-unit {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.worked {
+  margin-top: 1.75rem;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  padding: 1rem 1.15rem;
+}
+
+.worked h3 {
+  margin-bottom: 0.35rem;
+}
+
+.worked p {
+  margin: 0;
+}
+
 /* Instructors */
 
 .monogram {
