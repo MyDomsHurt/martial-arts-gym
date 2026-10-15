@@ -880,55 +880,25 @@ section {
   text-transform: none;
 }
 
-.rate-seq {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border: 1px solid var(--ink);
-  background: var(--paper);
-}
-
-.rate-seq li {
-  padding: 0.85rem 0.3rem;
-  text-align: center;
-  border-left: 1px solid var(--ink);
-}
-
-.rate-seq li:first-child {
-  border-left: none;
-  background: var(--ink);
-  color: var(--paper);
-}
-
-.rate-seq span {
-  display: block;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.rate-seq strong {
-  display: block;
-  margin-top: 0.3rem;
+.rate-line {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin: 0.35rem 0 0;
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
-  font-size: clamp(1.35rem, 3vw, 2.1rem);
+  font-size: clamp(1.65rem, 5.5vw, 2.75rem);
   line-height: 1;
+  letter-spacing: 0.02em;
 }
 
-.rate-seq .rate-unit {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
+.rate-arrow {
   font-weight: 400;
-  letter-spacing: 0;
-  text-transform: none;
+  font-size: 0.62em;
 }
 
-.rate-seq + .rate-note {
+.rate-line + .rate-note {
   margin-top: 1rem;
 }
 
