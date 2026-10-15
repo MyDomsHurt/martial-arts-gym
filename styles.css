@@ -928,6 +928,112 @@ section {
   text-transform: none;
 }
 
+.rate-seq.is-support li {
+  padding: 0.5rem 0.2rem;
+}
+
+.rate-seq.is-support span {
+  font-size: 0.68rem;
+}
+
+.rate-seq.is-support strong {
+  font-size: 1.15rem;
+}
+
+.week-preview {
+  margin: 0.35rem 0 1.35rem;
+}
+
+.week-caption,
+.seq-label {
+  margin: 0 0 0.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.seq-label {
+  margin-top: 0.35rem;
+  color: var(--muted);
+}
+
+.week-sessions,
+.week-sum {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--paper);
+}
+
+.week-sessions {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 2px solid var(--ink);
+}
+
+.week-sessions li,
+.week-sum p {
+  margin: 0;
+  padding: 0.9rem 0.35rem 0.8rem;
+  text-align: center;
+  border-left: 1px solid var(--ink);
+}
+
+.week-sessions li:first-child,
+.week-sum p:first-child {
+  border-left: none;
+}
+
+.week-sessions li:first-child {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.week-sessions span,
+.week-sum span {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.week-sessions strong,
+.week-sum strong {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.week-sessions strong {
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.week-sum {
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--ink);
+  border-top: 0;
+}
+
+.week-sum strong {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+.week-sessions .rate-unit,
+.week-sum .rate-unit {
+  margin-top: 0.35rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .worked {
   margin-top: 1.75rem;
   border: 2px solid var(--ink);
