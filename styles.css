@@ -305,7 +305,7 @@ nav {
 }
 
 .hero h1.hero-split {
-  font-size: min(4.25rem, calc((100vw - 3.5rem) / 15.2));
+  font-size: min(3rem, calc((100vw - 4rem) / 20.6));
   line-height: 1.12;
 }
 
