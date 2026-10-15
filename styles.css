@@ -880,101 +880,58 @@ section {
   text-transform: none;
 }
 
-.start-rate {
-  margin: 0.5rem 0 0.65rem;
+.credit-note {
+  margin: 0.85rem auto 0;
+  max-width: 40rem;
 }
 
-.start-label {
-  display: block;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: 0.92rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.money-rates {
+  list-style: none;
+  margin: 0.85rem 0 1.15rem;
+  padding: 0;
+  max-width: 34rem;
 }
 
-.start-num {
-  display: block;
-  margin-top: 0.1rem;
+.money-rates li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--ink);
+}
+
+.money-rates li:last-child {
+  border-bottom: 1px solid var(--ink);
+}
+
+.money-rates strong {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
-  font-size: clamp(4.5rem, 14vw, 7.25rem);
-  line-height: 0.88;
-  letter-spacing: -0.03em;
-}
-
-.start-unit {
-  display: block;
-  margin-top: 0.2rem;
-  color: var(--muted);
-  font-size: 1.05rem;
-}
-
-.rate-line {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: baseline;
-  gap: 0.4rem;
-  margin: 0;
-  color: var(--muted);
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: clamp(1.25rem, 4vw, 1.85rem);
+  font-size: clamp(1.7rem, 4.5vw, 2.35rem);
   line-height: 1;
   letter-spacing: 0.02em;
 }
 
-.rate-arrow {
-  font-weight: 400;
-  font-size: 0.62em;
+.money-rates-week li:first-child strong {
+  font-size: clamp(2.15rem, 6vw, 3rem);
 }
 
-.rate-line + .rate-note {
-  margin-top: 1.15rem;
-}
-
-.hour-rates {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin: 0.35rem 0 1rem;
-  padding: 0;
-  list-style: none;
-}
-
-.hour-rates li {
-  border: 1px solid var(--ink);
-  background: var(--paper);
-  padding: 0.95rem 0.35rem 0.85rem;
-  text-align: center;
-}
-
-.hour-rates span {
-  display: block;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.hour-rates strong {
-  display: block;
-  margin-top: 0.35rem;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  font-size: clamp(2rem, 6vw, 2.75rem);
-  line-height: 1;
-}
-
-.hour-rates .rate-unit {
-  margin-top: 0.35rem;
+.money-rates span {
   color: var(--muted);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  text-transform: none;
+  text-align: right;
+}
+
+@media (max-width: 22rem) {
+  .money-rates li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+
+  .money-rates span {
+    text-align: left;
+  }
 }
 
 .worked {
