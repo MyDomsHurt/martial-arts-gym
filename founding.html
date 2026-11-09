@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Founding Members | Open Dojo Yau Tong</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #000; color: #fff; font-family: 'Inter', sans-serif; line-height: 1.5; }
+  .hero { position: relative; min-height: 70vh; background: #111 url('dojo-hero.jpg') center/cover no-repeat; display: flex; align-items: flex-end; }
+  .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, #000 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%); }
+  .hero-content { position: relative; z-index: 1; padding: 48px 24px 32px; max-width: 720px; }
+  h1 { font-family: 'Oswald', sans-serif; font-size: clamp(36px, 8vw, 64px); font-weight: 700; line-height: 0.95; letter-spacing: -0.5px; margin-bottom: 12px; }
+  .sub { font-size: 18px; color: #ddd; max-width: 480px; margin-bottom: 24px; }
+  .cta { display: inline-block; background: #fff; color: #000; font-family: 'Oswald', sans-serif; font-size: 18px; font-weight: 700; letter-spacing: 1px; padding: 16px 28px; text-decoration: none; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+  h2 { font-family: 'Oswald', sans-serif; font-size: 28px; margin-bottom: 16px; }
+  .offer { background: #111; border: 1px solid #333; padding: 28px; margin: 32px 0; }
+  .offer strong { color: #fff; }
+  .programs { display: grid; gap: 24px; margin: 32px 0; }
+  .program { border-top: 1px solid #333; padding-top: 20px; }
+  .program h3 { font-family: 'Oswald', sans-serif; font-size: 22px; margin-bottom: 8px; }
+  form { background: #111; padding: 28px; margin-top: 40px; }
+  label { display: block; font-size: 13px; color: #aaa; margin: 16px 0 6px; }
+  input, select, textarea { width: 100%; background: #000; border: 1px solid #333; color: #fff; padding: 12px; font-size: 16px; font-family: 'Inter', sans-serif; }
+  .checkboxes { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0; }
+  .checkboxes label { font-size: 14px; color: #fff; margin: 0; display: flex; align-items: center; gap: 6px; }
+  button { width: 100%; background: #fff; color: #000; border: none; padding: 16px; font-family: 'Oswald', sans-serif; font-size: 18px; font-weight: 700; letter-spacing: 1px; cursor: pointer; margin-top: 20px; }
+  .note { font-size: 13px; color: #888; margin-top: 12px; }
+  .yellow { color: #f5c518; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Founding Members.<br>Open Dojo.<br>Yau Tong.</h1>
+      <p class="sub">50% off every credit pack before we open. Then 30% off forever after. Limited spots. Opening 2027.</p>
+      <a href="#form" class="cta">LOCK IN FOUNDING RATES</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="offer">
+      <h2>Founding Member Pricing</h2>
+      <p><strong>50% off</strong> all credit packs purchased before we open.</p>
+      <p><strong>Permanent 30% off</strong> every credit pack after opening — for Founding Members only.</p>
+      <p class="note">Limited spots. No commitment until we open. We’ll contact you with purchase details.</p>
+    </div>
+
+    <h2>Three ways to train</h2>
+    <div class="programs">
+      <div class="program">
+        <h3>Boxing</h3>
+        <p>Coached by WBC, WIBA and WBO title holders. Pads, bag work, and technique. For skill, fitness, or both. Beginners welcome — no sparring until you’re ready.</p>
+      </div>
+      <div class="program">
+        <h3>Martial Arts Fitness</h3>
+        <p>Coached conditioning built from martial arts movement. Strength, work capacity, and skill without sparring.</p>
+      </div>
+      <div class="program">
+        <h3>Jiu Jitsu Open Mat</h3>
+        <p>Communal, friendly mat time. No coach. No structure. Show up, find a partner, and train how you want — roll, drill, experiment, or just hang and share techniques. This is where the community forms.</p>
+      </div>
+    </div>
+
+    <h2>There’s a system.</h2>
+    <p>Train more for better pricing. Buy credits. Credits don’t expire. No monthly contracts. The more you train, the better your rate.</p>
+
+    <form id="form" action="#" method="POST">
+      <h2>Reserve your Founding Member spot</h2>
+      <p class="note">Opening 2027 in Yau Tong — a short walk from the station. We’ll write with updates and early purchase access.</p>
+
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="whatsapp">WhatsApp number</label>
+      <input type="tel" id="whatsapp" name="whatsapp" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label>Primary interest</label>
+      <div class="checkboxes">
+        <label><input type="checkbox" name="interest" value="Boxing"> Boxing</label>
+        <label><input type="checkbox" name="interest" value="Fitness"> Martial Arts Fitness</label>
+        <label><input type="checkbox" name="interest" value="Open Mat"> Open Mat</label>
+        <label><input type="checkbox" name="interest" value="All"> All / Not sure</label>
+      </div>
+
+      <label for="note">Anything we should know? (optional)</label>
+      <textarea id="note" name="note" rows="3"></textarea>
+
+      <button type="submit">RESERVE MY SPOT</button>
+      <p class="note">No commitment until we open. We’ll contact you on WhatsApp with Founding Member details.</p>
+    </form>
+  </div>
+</body>
+</html>
